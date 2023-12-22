@@ -52,6 +52,12 @@
     gap: 4px;
 }
 
+.color:hover,
+.color:focus {
+    background: #FBFBFB;
+    color: #1B414B;
+}
+
 .footer-social-2 {
     display: block;
 }
