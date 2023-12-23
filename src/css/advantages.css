@@ -1,0 +1,168 @@
+/*
+|=========================================|
+|=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
+|=========================================|
+*/
+
+/*
+|=====================================|
+|------|ДЕФОЛТНІ СКИДАННЯ/RESET|------|
+|=====================================|
+*/
+/*скинув маркери*/
+.list {
+  list-style: none;
+}
+
+/* скинув підкреслення */
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+/*
+|------------COLORS/FONTS/OTHER----------|
+|----прописати зрозумілі значення для кольрів:----|
+|- CL - колір для тексту;-------------------------------|
+|- H - колір для заголовків;----------------------------|
+|- P - колір для абзаців;----------------------------|
+|- BG - колір для фону;----------------------------------|
+*/
+:root {
+  --color-1: #040306;
+  --color-body-bg: #0e1823;
+  --color-sec-bg: #1b414b;
+  --accent-color-text: #fbfbfb;
+
+  /*fonts*/
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: '', sans-serif;
+}
+
+/*стилі для приховаих заголовків*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+|=============================================|
+|=====|OFF/ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
+|=============================================|
+*/
+/*
+|====================================================|
+|============|MOBILE STYLES/advantages|==============|
+|====================================================|
+*/
+@media screen and (max-width: 767px) {
+  .section-advantages {
+    background-color: var(--color-body-bg);
+  }
+  .advantages-box {
+    background-color: var(--color-sec-bg);
+  }
+  .advantages-text-box {
+    /* typography */
+    color: var(--accent-color-text);
+    font-family: Inter;
+    font-style: normal;
+  }
+  .advantages-page-text {
+    color: #fbfbfb;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    letter-spacing: -1.4px;
+  }
+  .advantages-text {
+    color: #fbfbfb;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16; /* 116.667% */
+    letter-spacing: -0.24px;
+  }
+  .advantages-img {
+  }
+  .advantages-images {
+  }
+}
+
+/*
+|========================================================|
+|============|OFF/MOBILE STYLES/advantages|==============|
+|========================================================|
+*/
+
+/*
+|====================================================|
+|============|TABLET STYLES/advantages|==============|
+|====================================================|
+*/
+@media screen and (min-width: 768px) {
+}
+/*
+|========================================================|
+|============|OFF/TABLET STYLES/advantages|==============|
+|========================================================|
+*/
+
+/*
+|==========================================================|
+|============|DESKTOP_1280 STYLES/advantages|==============|
+|==========================================================|
+*/
+@media screen and (min-width: 1280px) {
+}
+/*
+|===========================================================|
+|============|OFF/DESKTOP_1280 STYLES/advantages|===========|
+|===========================================================|
+*/
+
+/*
+|==========================================================|
+|============|DESKTOP_1440 STYLES/advantages|==============|
+|==========================================================|
+*/
+@media screen and (min-width: 1440px) {
+}
+/*
+|===========================================================|
+|============|OFF/DESKTOP_1440 STYLES/advantages|===========|
+|===========================================================|
+*/
