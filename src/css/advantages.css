@@ -1,154 +1,158 @@
-/*
-|=========================================|
-|=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
-|=========================================|
-*/
+/* ==Advantages== */
 
-/*
-|=====================================|
-|------|ДЕФОЛТНІ СКИДАННЯ/RESET|------|
-|=====================================|
-*/
-/*скинув маркери*/
-.list {
-  list-style: none;
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 20px;
+  border-radius: 24px;
+  background: #1B414B;
+  margin-bottom: 20px;
 }
 
-/* скинув підкреслення */
-.link {
-  text-decoration: none;
+.advantages-list-number {
+  color: #FBFBFB;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 36px;
 }
 
-button {
-  cursor: pointer;
+.advantages-list-text {
+  position: relative;
+  width: 292px;
+  color: #FBFBFB;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.05em;
+  opacity: 0.8;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
+.advantages-list-text::before {
   display: block;
-}
-/*
-|------------COLORS/FONTS/OTHER----------|
-|----прописати зрозумілі значення для кольрів:----|
-|- CL - колір для тексту;-------------------------------|
-|- H - колір для заголовків;----------------------------|
-|- P - колір для абзаців;----------------------------|
-|- BG - колір для фону;----------------------------------|
-*/
-:root {
-  --color-1: #040306;
-  --color-body-bg: #0e1823;
-  --color-sec-bg: #1b414b;
-  --accent-color-text: #fbfbfb;
-
-  /*fonts*/
-  --primary-font: 'Inter', sans-serif;
-  --secondary-font: '', sans-serif;
-}
-
-/*стилі для приховаих заголовків*/
-.visually-hidden {
+  content: "";
+  width: 295px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: rgba(251, 251, 251, 0.10);
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  top: -18px;
 }
 
-/*
-|=============================================|
-|=====|OFF/ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
-|=============================================|
-*/
-/*
-|====================================================|
-|============|MOBILE STYLES/advantages|==============|
-|====================================================|
-*/
-@media screen and (max-width: 767px) {
-  .section {
-  }
-  .section-advantages {
-  }
-  .advantages-box {
-  }
-  .advantages-title {
-  }
-  .visually-hidden {
-  }
-  .advantages-list {
-  }
-  .advantages-list-item {
-  }
-  .adantages-list-number {
-  }
-  .advantages-list-text {
-  }
-  .advantages-img {
-  }
+.text {
+  width: 220px;
 }
 
-/*
-|========================================================|
-|============|OFF/MOBILE STYLES/advantages|==============|
-|========================================================|
-*/
+.advantages-img {
+  border-radius: 24px;
+}
 
-/*
-|====================================================|
-|============|TABLET STYLES/advantages|==============|
-|====================================================|
-*/
+/* ==TABLET section-reviews== */
+
 @media screen and (min-width: 768px) {
-}
-/*
-|========================================================|
-|============|OFF/TABLET STYLES/advantages|==============|
-|========================================================|
-*/
 
-/*
-|==========================================================|
-|============|DESKTOP_1280 STYLES/advantages|==============|
-|==========================================================|
-*/
+  .container {
+    max-width: 767px;
+    padding: 0 32px;
+  }
+
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 44px 32px;
+    padding: 90px 32px;
+    margin-bottom: 32px;
+  }
+
+  .advantages-list-item {
+    width: 303px;
+  }
+
+  .advantages-list-number {
+    font-size: 32px;
+  }
+
+  .advantages-list-text {
+    color: #FBFBFB;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .advantages-list-text::before {
+    width: 304px;
+  }
+}
+
+/* ==TABLET section-reviews== */
+
+
+/* ==DESKTOP_1280 section-our-yachts== */
+
 @media screen and (min-width: 1280px) {
-}
-/*
-|===========================================================|
-|============|OFF/DESKTOP_1280 STYLES/advantages|===========|
-|===========================================================|
-*/
 
-/*
-|==========================================================|
-|============|DESKTOP_1440 STYLES/advantages|==============|
-|==========================================================|
-*/
-@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+
+  .advantages-list {
+    gap: 44px 44px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 50px;
+    padding-right: 62px;
+    margin-bottom: 0;
+  }
+
+  .advantages-list-text::before {
+    width: 280px;
+  }
+
+  .advantages-list-item {
+    width: 280px;
+  }
+
+  .container-des {
+    display: flex;
+    gap: 32px;
+  }
+
 }
-/*
-|===========================================================|
-|============|OFF/DESKTOP_1440 STYLES/advantages|===========|
-|===========================================================|
-*/
+
+/* ==DESKTOP_1280 section-reviews== */
+
+/* ==DESKTOP_1440 section-reviews== */
+
+@media screen and (min-width: 1440px) {
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .advantages-list {
+    padding-right: 50px;
+    gap: 44px 32px;
+  }
+
+  .advantages-list-item {
+    width: 318px;
+  }
+
+  .advantages-list-text::before {
+    width: 318px;
+  }
+}
+
+
+/* ==DESKTOP_1440 section-reviews==*/
